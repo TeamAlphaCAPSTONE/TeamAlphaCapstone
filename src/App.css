@@ -1,0 +1,23 @@
+width {
+  width: 18rem;
+}
+
+.border-3 {
+  border-width:8px !important;
+}
+.navbar-custom {
+  background-color: #191633;
+}
+
+.DD {
+  background-image: url(./DD.jpg);
+}
+
+.textcolor {
+  color: aliceblue;
+}
+
+span#et-info-phone:before { 
+  font-family: FontAwesome !important;
+  content: '10b' !important;
+}
