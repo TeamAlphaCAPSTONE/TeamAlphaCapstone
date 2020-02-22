@@ -1,6 +1,6 @@
 import React from 'react';
 import DD from './DD.jpg';
-import './App.css';
+// import  './App.css';
 
 const Header = (props) => {
     return (
@@ -16,9 +16,9 @@ const Header = (props) => {
                     <li className="nav-item active">
                         <a className="nav-link py-1 pr-3 font-weight-bold h1" href="#">Scrapper</a>
                     </li>
-                    <div className="border border-dark border-3 h-50 textcolor">
-                    <li classNameName="nav-item nav-link active">
-                        <span className="nav-item py-1 pr-3 active">
+                    <div className="border border-dark border-3 h-50 textcolor active">
+                    <li className="nav-item nav-link">
+                        <span className="nav-item py-1 pr-3">
                             <i className="fas fa-phone"></i>
                             416.919.6817
                         </span>

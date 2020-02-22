@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './header';
 import Footer from './footer';
-import PieChart from './charts';
+import Meter from './meter';
 
 class App extends React.Component{
   render() {
@@ -10,10 +10,11 @@ class App extends React.Component{
         <header>
           <Header />
         </header>
-        <body>
-          <PieChart />
-        </body>
+        
+        <Meter />
+        
         <footer>
+        
           <Footer />
         </footer>
       </div>
