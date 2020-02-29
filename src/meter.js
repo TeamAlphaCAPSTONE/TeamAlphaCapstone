@@ -4,7 +4,7 @@ import './meterData';
 import './App.css';
 import {Button,ButtonToolbar} from 'react-bootstrap';
 import {SeoModel} from './SeoModel';
-import {ProgressBar} from 'react-bootstrap';
+import {ProgressBar, Dropdown} from 'react-bootstrap';
 
 export default class Meter extends Component{
 	constructor(props)
@@ -43,6 +43,62 @@ const progressInstance = <ProgressBar now={now} label={`${now}%`} />;
 				0%
 			</div>
 
+			{/* <ButtonToolbar>
+		   <Button
+		   variate='primary'
+		   onClick={()=>this.setState({addModelShow:true})}
+		   
+		   > Points1.. </Button>
+		   <SeoModel
+		   show={this.state.addModelShow}
+		   onHide={addModelClose}
+		   />
+	   </ButtonToolbar> */}
+	   <Dropdown >
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
+    Point1...
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu id="dropdown-style">
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
+<Dropdown >
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
+  Point2...
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu id="dropdown-style">
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
+<Dropdown >
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
+  Point3...
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu id="dropdown-style">
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
+<Dropdown >
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
+  Point4...
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu id="dropdown-style">
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
+
 	</div>
 
 	<div className="gauge1">
@@ -64,21 +120,54 @@ const progressInstance = <ProgressBar now={now} label={`${now}%`} />;
 			<div className="value1" >
 				0%
 			</div>
+			<Dropdown >
+  <Dropdown.Toggle variant="success" id="dropdown-basic1">
+    Point1...
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu id="dropdown-style">
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
+<Dropdown >
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
+  Point2...
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu id="dropdown-style">
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
+<Dropdown >
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
+  Point3...
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu id="dropdown-style">
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
+<Dropdown >
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
+  Point4...
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu id="dropdown-style">
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
 
 	</div>
    
-	<progressInstance/>
-       <ButtonToolbar>
-		   <Button
-		   variate='primary'
-		   onClick={()=>this.setState({addModelShow:true})}
-		   
-		   > Points1.. </Button>
-		   <SeoModel
-		   show={this.state.addModelShow}
-		   onHide={addModelClose}
-		   />
-	   </ButtonToolbar>
+       
 	  
 	   </div>
 

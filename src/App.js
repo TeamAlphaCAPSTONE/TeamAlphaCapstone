@@ -15,7 +15,7 @@ class App extends React.Component{
         <Meter />
         
         <footer>
-        
+        <Footer/>
          
         </footer>
       </div>
