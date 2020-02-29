@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './header';
 import Footer from './footer';
 import Meter from './meter';
+import NewMeter from './newchart';
 
 class App extends React.Component{
   render() {
@@ -15,7 +16,7 @@ class App extends React.Component{
         
         <footer>
         
-          <Footer />
+         
         </footer>
       </div>
     );
