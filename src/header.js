@@ -7,10 +7,15 @@ const Header = (props) => {
         <div>
         
         <nav className="navbar sticky-top navbar-expand-sm navbar-dark justify-content-end navbar-custom">
+            
+        
             <a className="navbar-brand" href="#"> <img src={DD} alt="DD" className="navbar-brand" width="90" height="120" /></a> 
+
             <button className="navbar-toggler ml-auto mr-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span className="navbar-toggler-icon"></span>
             </button>
+         
+       
             <div className="collapse navbar-collapse flex-column flex-grow-0 ml-auto mr-1" id="navbarSupportedContent">
                 <ul className="navbar-nav flex-row mb-2">
                     <li className="nav-item active">
@@ -25,9 +30,9 @@ const Header = (props) => {
                     </li>
                 </div>
                 </ul>
-                <ul className="navbar-nav flex-row mb-2 text-right">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">Home</a>
+                <ul className="navbar-nav flex-row mb-2 text-right inside">
+                    <li className="nav-item active lis">
+                        <a className="nav-link l" href="#">Home</a>
                     </li>
                     <li className="nav-item active">
                         <a className="nav-link" href="#">About us</a>

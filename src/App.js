@@ -3,6 +3,7 @@ import Header from './header';
 import Footer from './footer';
 import Meter from './meter';
 import NewMeter from './newchart';
+import FirstPage from './main';
 
 class App extends React.Component{
   render() {
@@ -12,10 +13,10 @@ class App extends React.Component{
           <Header />
         </header>
         
-        <Meter />
+        <FirstPage />
         
         <footer>
-        
+        <Footer />
          
         </footer>
       </div>
