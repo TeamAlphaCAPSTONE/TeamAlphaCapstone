@@ -30,28 +30,28 @@ class FirstPage extends React.Component{
                     <div className="form-group">
                         <input type="text" className="form-control box" id="name" placeholder="Enter your name"></input>
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control box" id="email" placeholder="name@example.com"></input>
+                    <div className="form-group">
+                        <input type="email" className="form-control box" id="email" placeholder="name@example.com"></input>
                     </div>
-                    <div class="form-group">
-                        <input type="url" class="form-control box" id="url" placeholder="www.url.com"></input>
+                    <div className="form-group">
+                        <input type="url" className="form-control box" id="url" placeholder="www.url.com"></input>
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="privacy" />
-                        <label class="form-check-label textcolor" for="privacy">I accept privacy policy</label>
+                    <div className="form-check">
+                        <input type="checkbox" className="form-check-input" id="privacy" />
+                        <label className="form-check-label textcolor" htmlFor="privacy">I accept privacy policy</label>
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="SendEmail" />
-                        <label class="form-check-label textcolor" for="SendEmail">I want report to be emailed</label>
+                    <div className="form-check">
+                        <input type="checkbox" className="form-check-input" id="SendEmail" />
+                        <label className="form-check-label textcolor" htmlFor="SendEmail">I want report to be emailed</label>
                     </div>
-                    <button type="submit" class="btn btn-primary d-block mt-4 mx-auto">See report</button>
+                    <button type="submit" className="btn btn-primary d-block mt-4 mx-auto">See report</button>
                 </form>  
 
 
                 <label id="loading" hidden>Loading ...</label>
-                <div class="progress center-block w-25 mt-4 mx-auto" style={{"textAlign" : "center"}}>
+                <div className="progress center-block w-25 mt-4 mx-auto" style={{"textAlign" : "center"}}>
                     
-                    <div className="progress-bar d-block bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{"width": "70%", "text-align":"center"}}>
+                    <div className="progress-bar d-block bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{"width": "70%", "textAlign":"center"}}>
                     10%    
                     </div>
                 </div>

@@ -22,23 +22,14 @@ span#et-info-phone:before {
   content: '10b' !important;
 }
 
-input {
+.box {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
   background-color: transparent;
-  border-color: yellow;
-  }
-
-  .box {
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: groove;
-    background-color: transparent;
-    border-color: rgb(69, 117, 172);
-    background: transparent;
+  border-color: rgb(69, 117, 172);
+  background: transparent;
 }
 
 input:-webkit-autofill,
