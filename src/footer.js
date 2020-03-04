@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = (props) => {
     return(
-        <nav className="navbar fixed-bottom navbar-expand-sm navbar-dark navbar-custom">
+        <nav className="navbar footer w-100 navbar-expand-sm navbar-dark navbar-custom">
             <ul className="navbar-nav flex-row mb-2 text-right">
                 <li className="nav-item active mx-3">
                     <a className="nav-link" href="#">Privacy</a>

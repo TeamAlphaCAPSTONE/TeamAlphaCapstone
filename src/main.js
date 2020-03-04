@@ -4,7 +4,7 @@ class FirstPage extends React.Component{
     render() {
       return (
         <div>
-            <div className="container-fluid w-50 mt-2 mx-auto">
+            <div className="container-fluid w-70 mt-2 mx-auto">
                 <div className="d-flex flex-column align-items-center text-center">
                     {/* <div className="border border-dark w-100 align-items-center text-center"> */}
                     <h2 style={{color: "white"}}>

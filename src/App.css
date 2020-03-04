@@ -2,6 +2,12 @@ width {
   width: 18rem;
 }
 
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .border-3 {
   border-width:8px !important;
 }
