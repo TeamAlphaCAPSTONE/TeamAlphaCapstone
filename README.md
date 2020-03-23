@@ -1,2 +1,0 @@
-# TeamAlphaCapstone
-CAPSTONE PROJECT
