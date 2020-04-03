@@ -1,8 +1,8 @@
-#SeoAccess
+SeoAccess
 ==========
 > Modern Seo & Web Accessibilty audits :muscle:
 
-#Features
+Features
 ===========
 - **Check Seo standard of your website**
     - Audit your website against set of rules which will help you get your website higher in SEO rankings
@@ -19,7 +19,7 @@
 - **Free to try**
     - Simple to get started for free
     
-##Contributors
+Contributors
 -----
 [@Archan1212]( https://github.com/Archan1212 )
 [@keval718]( https://github.com/keval718 )
