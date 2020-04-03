@@ -1,0 +1,2 @@
+# TeamAlphaCapstone
+CAPSTONE PROJECT - SeoAccess
