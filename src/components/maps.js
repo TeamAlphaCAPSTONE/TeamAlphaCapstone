@@ -22,7 +22,9 @@ export class MapContainer extends Component {
          lng: -79.425194
         }}
       >
-          <Marker
+          <Marker onClick={()=>{
+            window.location.href="https://www.google.com/maps/place/Dare+%26+Defy+Strategic+Consulting/@43.639173,-79.424894,15z/data=!4m5!3m4!1s0x0:0xbfec18a00e448e5c!8m2!3d43.639173!4d-79.424894"
+          }}
           name={'Dare and Defy'}
         />
         <InfoWindow><div>
