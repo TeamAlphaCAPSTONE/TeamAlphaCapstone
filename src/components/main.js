@@ -1,13 +1,12 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import SecondPage from './SecondPage';
-import history from './history';
 import axios from 'axios';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import UrlContext from '../context/urlContext';
 // import {alert} from 'node-popup';
-
+import history from './history';
 
 class FirstPage extends React.Component {
     constructor(props) {
@@ -20,7 +19,8 @@ class FirstPage extends React.Component {
             name: "",
             email: "",
             url: "",
-            count: 0
+            count: 0,
+            history
         }
     }
 
@@ -49,8 +49,8 @@ class FirstPage extends React.Component {
         console.log(this.state.url)
         console.log(this.state.email)
 
-        await axios.post('http://localhost:5000/seo_reports/url/', url);
-        await axios.post('http://localhost:5000/tally_reports/url/', url);
+        await axios.post('https://seoaccess-server.herokuapp.com/seo_reports/url/', url);
+        await axios.post('https://seoaccess-server.herokuapp.com/tally_reports/url/', url);
         this.myInterval = setInterval(() => {
             this.setState(prevState => ({
                 count: this.state.count + 10
@@ -59,8 +59,11 @@ class FirstPage extends React.Component {
                 console.log("inside if" + this.state.count)
 
                 // axios.post('http://localhost:5000/email/sendEmail', email)
-                window.location = '/secondPage/' + this.state.email + '/' + this.state.url;
-
+                //window.location = '/secondPage/' + this.state.email + '/' + this.state.url;
+                this.state.history.push({
+                    pathname : '/secondPage',
+                    state : {url: this.state.url, email : this.state.email}
+                })
             }
 
         }, 2000)
