@@ -128,6 +128,7 @@ class SecondPage extends React.Component {
     const serious = this.state.serious_impact_result.map((d) =>
       <div>
         <li className="list-group-item">{d.description}</li>
+
       </div>
     )
     const minor = this.state.minor_impact_result.map((d) =>

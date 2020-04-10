@@ -37,10 +37,13 @@ module.exports = {
                         })
                         if(output.results[newURL].rules[i].impact == "serious"){
                             serious_arr.add(result);
+                            console.log("serious_Arr"+result);
                         }else if(output.results[newURL].rules[i].impact == "moderate"){
                             moderate_arr.add(result);
+                            console.log("moderate_arr"+result);
                         }else if(output.results[newURL].rules[i].impact == "critical"){
                             critical_arr.add(result);
+                            console.log("crical_Arr"+result);
                         }else if(output.results[newURL].rules[i].impact == "minor"){
                             minor_arr.add(result);
                         }else{
@@ -52,6 +55,7 @@ module.exports = {
                     // eslint-disable-next-line no-array-constructor
                     serious_arr = new Array();
                     newArr.forEach(element => {
+                        console.log("element"+element)
                         serious_arr.push(JSON.parse(element));
                     });
 
